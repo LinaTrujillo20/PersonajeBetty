@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
 
-body{background-image: url("../img/betty.png");
+body{background-image: url("../img/fondo.jpeg");
     background-repeat: repeat;}
+
+.acercadebetty{
+    background-image: url("../img/yo\ soy\ bett.jpg");
+    background-repeat: repeat;
+
+}
+    
 
 .betty{
     width:48%;
@@ -48,6 +56,7 @@ body{background-image: url("../img/betty.png");
    align-items:center;
    
 }
+
 /*armando*/
 
 .armando{
@@ -83,5 +92,214 @@ body{background-image: url("../img/betty.png");
     border: 5px solid rgb(245, 242, 238) ;
     align-items: flex-end;         
 }
+
+.menu{
+    list-style: none;
+    padding: 0;
+    background: linear-gradient( #928e7c, #cfccc4 );;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Comfortaa', cursive;
+    border-radius: 15px ;
+}
+
+.menu li a{
+    text-decoration: none;
+    text-shadow: 3px 3px 7px rgb(255, 255, 255);
+    color: rgb(29, 16, 10);
+    padding: 20px;
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+
+}
+
+.menu li a:hover{
+    background: #f59b75;
+    border-radius: 20px ;
+
+}
+
+.sobrebetty{
+    width:48%;
+    background: linear-gradient(#EDCDBB, #FFEDDB);
+    box-shadow: 3px 3px 7px rgb(236, 229, 229);
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    margin: 40px auto;
+    align-items: center;
+    padding: 30px ;
+    
+}
+
+.sobrebetty p{
+    padding: 30px 30px 20px 30px;
+    text-align: justify;
+    font-family: 'Comfortaa', cursive;
+    align-content: flex-end;     
+}
+
+.sobrebetty img {
+    width: 50%;
+    height: auto;
+    margin-right: 7px ; 
+    border-radius: 10px; 
+    border: 5px solid rgb(233, 230, 225) ;
+    align-items: flex-end;
+    
+}
+
+.sobrebetty h1 {
+   font-family: 'Redressed', cursive;
+   text-shadow: 3px 3px 7px rgb(233, 227, 227);
+   text-align:center;
+   align-items:center;
+   
+}
+
+.sobrearmando{
+    width:48%;
+    background: linear-gradient(#464E2E, #ACB992);
+    box-shadow: 3px 3px 7px rgb(236, 229, 229);
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    margin: 40px auto;
+    align-items: center;
+    padding: 30px ;
+    
+}
+
+.sobrearmando p{
+    padding: 30px 30px 20px 30px;
+    text-align: justify;
+    font-family: 'Comfortaa', cursive;
+    align-content: flex-end;     
+}
+
+.sobrearmando img {
+    width: 50%;
+    height: auto;
+    margin-right: 7px ; 
+    border-radius: 10px; 
+    border: 5px solid rgb(233, 230, 225) ;
+    align-items: flex-end;
+    
+}
+
+.sobrearmando h1 {
+   font-family: 'Redressed', cursive;
+   text-shadow: 3px 3px 7px rgb(233, 227, 227);
+   text-align:center;
+   align-items:center;
+   
+}
+
+.experiencia{
+    width:48%;
+    background: linear-gradient(#74959A, #98B4AA);
+    box-shadow: 3px 3px 7px rgb(236, 229, 229);
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    margin: 40px auto;
+    align-items: center;
+    padding: 30px ;
+    
+}
+
+.experiencia p{
+    padding: 30px 30px 20px 30px;
+    text-align: justify;
+    font-family: 'Comfortaa', cursive;
+    align-content: flex-end;     
+}
+
+.experiencia img {
+    width: 50%;
+    height: auto;
+    margin-right: 7px ; 
+    border-radius: 10px; 
+    border: 5px solid rgb(233, 230, 225) ;
+    align-items: flex-end;
+    
+}
+
+.experiencia h1 {
+   font-family: 'Redressed', cursive;
+   text-shadow: 3px 3px 7px rgb(233, 227, 227);
+   text-align:center;
+   align-items:center;  
+}
+
+.entrevista{
+    width:48%;
+    background: linear-gradient(#74959A, #98B4AA);
+    box-shadow: 3px 3px 7px rgb(236, 229, 229);
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    margin: 40px auto;
+    align-items: center;
+    padding: 30px ;   
+}
+.entrevista h1 {
+    font-family: 'Redressed', cursive;
+    text-shadow: 3px 3px 7px rgb(233, 227, 227);
+    text-align:center;
+    align-items:center;  
+}
+
+.cuartel{
+    width:48%;
+    background: linear-gradient(#E5E3C9, #B4CFB0);
+    box-shadow: 3px 3px 7px rgb(236, 229, 229);
+    border-radius: 10px;
+    display: flex-column;
+    justify-content:center;
+    margin: 40px auto;
+    align-items: center;
+    padding: 30px ;   
+}
+
+.cuartel img{
+    width: 50%;
+    height: auto;
+    margin-right: 7px ; 
+    border-radius: 10px; 
+    border: 5px solid rgb(233, 230, 225) ;
+    align-items: flex-end;    
+}
+.cuartel h1 {
+    font-family: 'Redressed', cursive;
+    text-shadow: 3px 3px 7px rgb(233, 227, 227);
+    text-align:center;
+    align-items:center;  
+ }
+
+.cuartel h2{
+    font-family: 'Redressed', cursive;
+   text-shadow: 3px 3px 7px rgb(233, 227, 227);
+   text-align:center;
+   align-items:center;
+}
+
+.cuartel p{
+    padding: 30px 30px 20px 30px;
+    text-align: justify;
+    font-family: 'Comfortaa', cursive;
+    align-content: flex-end;     
+}
+    
+
+
+
+
+
 
 
