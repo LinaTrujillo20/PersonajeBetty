@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+
+html{
+    height: 100%;
+}
+body{
+    background-image: url("../img/fondo.jpeg");
+    background-repeat: repeat;
+    max-height: 100%;
+}
+
+
+
+.menu2{
+    width: 368px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-areas: 
+    "li1"
+    "li2"
+    "li3"
+    "li4"
+    "li5" ;
+    background: linear-gradient( #928e7c, #cfccc4 );
+    margin: auto;
+    font-family: 'Comfortaa', cursive;
+    border-radius: 10px ;
+        
+}
+.menu2 >a:hover{
+    background: #f59b75;
+    border-radius: 20px ;
+}
+.li1{
+    grid-area: li1;
+}
+.li2{
+    grid-area: li2;
+}
+.li3{
+    grid-area: li3;
+}
+.li4{
+    grid-area: li4;
+}
+.li5{
+    grid-area: li5;
+}
+.menu2 a{
+    text-decoration: none;
+    padding: 5px;
+    text-shadow: 3px 3px 7px rgb(255, 255, 255);
+    color: rgb(29, 16, 10);
+    list-style: none;
+    
+}
+
+
+.grid{
+    display: grid;
+    grid-template-areas:
+    "li1"
+    "li2"
+    "li3"
+    "li4"
+    "li5"
+    "experiencia"
+    "entrevista";
+}
+.experiencia{/* para crear las columnas*/
+    grid-area: experiencia;
+    background: linear-gradient(#74959A, #98B4AA);
+    box-shadow: 3px 3px 7px rgb(236, 229, 229);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+    margin: 15px;
+    
+    
+}
+
+.experiencia p{
+    text-align:  justify;
+    font-family: 'Comfortaa', cursive;
+         
+}
+
+.experiencia img {
+    width: 50%;
+    height: auto;
+    margin-right: 7px ; 
+    border-radius: 10px; 
+    border: 5px solid rgb(233, 230, 225) ;
+}
+
+.experiencia h1 {
+   font-family: 'Redressed', cursive;
+   text-shadow: 3px 3px 7px rgb(233, 227, 227);
+}
+
+.entrevista{
+    grid-area: entrevista;
+    margin: 15px;
+    height: 300px;
+    background: linear-gradient(#74959A, #98B4AA);
+    box-shadow: 3px 3px 7px rgb(236, 229, 229);
+    border-radius: 10px;
+    text-align: center;
+}
+.entrevista h1 {
+    font-family: 'Redressed', cursive;
+    text-shadow: 3px 3px 7px rgb(233, 227, 227);
+    text-align:center;
+    align-items:center;  
+}
+
+/*Resolución Tabletas*/
+@media screen and (min-width:768px){
+    .grid{
+        grid-template-areas: 
+        "menu menu menu menu menu"
+        "experiencia experiencia experiencia experiencia experiencia"
+        "entrevista entrevista entrevista entrevista entrevista"
+
+    }
+    .menu2{
+        width: 768px;
+        display: grid;
+        grid-template-areas: 
+        "li1 li2 li3 li4 li5";
+        background: linear-gradient( #928e7c, #cfccc4 );
+        margin: auto;
+        font-family: 'Comfortaa', cursive;
+        border-radius: 10px ;
+            
+    }
+   
+}
+
+
+/*Resolución resoluciones medias*/
+@media screen and (min-width:1024px){
+   
+    .menu2{
+        width: 1024px;
+    }
+}
+
+
+/*Resolución resoluciones macro*/
+@media screen and (min-width:1200px) {
+    .menu2{
+        width: 1200px;
+    }
+
+}
