@@ -11,21 +11,19 @@ body{
     background-repeat: repeat;
     max-height: 100%;
 }
-
-
-
 .menu2{
-    width: 368px;
-    padding: 10px 20px;
+    padding: 10px 10px;
+    margin: 15px;
     display: grid;
+    grid-area: menu2;
+    text-align: center;
     grid-template-areas: 
     "li1"
     "li2"
     "li3"
     "li4"
-    "li5" ;
+    "li5";
     background: linear-gradient( #928e7c, #cfccc4 );
-    margin: auto;
     font-family: 'Comfortaa', cursive;
     border-radius: 10px ;
         
@@ -55,18 +53,13 @@ body{
     text-shadow: 3px 3px 7px rgb(255, 255, 255);
     color: rgb(29, 16, 10);
     list-style: none;
-    
 }
 
 
 .grid{
     display: grid;
     grid-template-areas:
-    "li1"
-    "li2"
-    "li3"
-    "li4"
-    "li5"
+    "menu2"
     "experiencia"
     "entrevista";
 }
@@ -78,19 +71,22 @@ body{
     text-align: center;
     padding: 20px;
     align-items: center;
-    margin: 15px;
-    
-    
+    margin: 15px;  
 }
-
+.contenido{
+    grid-area: contenido;
+}
 .experiencia p{
     text-align:  justify;
     font-family: 'Comfortaa', cursive;
+    position: relative;
+    left: -1%;
          
 }
 
 .experiencia img {
-    width: 50%;
+    grid-area: experiencia_img;
+    width: 63%;
     height: auto;
     margin-right: 7px ; 
     border-radius: 10px; 
@@ -101,15 +97,25 @@ body{
    font-family: 'Redressed', cursive;
    text-shadow: 3px 3px 7px rgb(233, 227, 227);
 }
+.contenido2{
+    grid-area: contenido2;
+}
+.video{
+  grid-area: video;
+  padding: 13px;
+  margin-left: 34px;
+}
 
 .entrevista{
     grid-area: entrevista;
     margin: 15px;
-    height: 300px;
+    height: 100%;
     background: linear-gradient(#74959A, #98B4AA);
     box-shadow: 3px 3px 7px rgb(236, 229, 229);
     border-radius: 10px;
-    text-align: center;
+    text-align: justify;
+    align-items: center;
+    padding: 1.1rem;
 }
 .entrevista h1 {
     font-family: 'Redressed', cursive;
@@ -118,17 +124,21 @@ body{
     align-items:center;  
 }
 
+.entrevista p{
+    font-family: 'Comfortaa', cursive;       
+}
+
 /*Resolución Tabletas*/
 @media screen and (min-width:768px){
     .grid{
         grid-template-areas: 
-        "menu menu menu menu menu"
+        "menu2 menu2 menu2 menu2 menu2"
         "experiencia experiencia experiencia experiencia experiencia"
-        "entrevista entrevista entrevista entrevista entrevista"
+        "entrevista entrevista entrevista entrevista entrevista";
 
     }
     .menu2{
-        width: 768px;
+        width: 95%;
         display: grid;
         grid-template-areas: 
         "li1 li2 li3 li4 li5";
@@ -136,17 +146,56 @@ body{
         margin: auto;
         font-family: 'Comfortaa', cursive;
         border-radius: 10px ;
-            
     }
-   
-}
 
+    .experiencia{
+        display: grid;
+        grid-template-areas: 
+        "experiencia_img contenido";
+    }
+    .experiencia img{
+        width: 82%;
+    }
+
+    .entrevista{
+        display: grid;
+        grid-template-areas: 
+        " contenido2 video ";
+        padding: 1.1rem;
+    }
+    .entrevista p{
+        padding-right: 2rem;
+    }
+}
 
 /*Resolución resoluciones medias*/
 @media screen and (min-width:1024px){
-   
-    .menu2{
-        width: 1024px;
+   .contenido{
+    position: relative;
+    right: 18%;
+
+   }
+   .experiencia h1{
+       text-align: left;
+   }
+    .experiencia img{
+        width: 57%;
+        position: relative;
+        left: 16%;
+    }
+    .video{
+        padding: 13px;
+        margin-left: 24px;
+    }
+
+    .contenido2{
+        position: relative;
+        left: 93px;
+        width: 372px;
+    }
+    .video iframe{
+        width: 86%;
+        height: 229px;
     }
 }
 
@@ -154,7 +203,58 @@ body{
 /*Resolución resoluciones macro*/
 @media screen and (min-width:1200px) {
     .menu2{
-        width: 1200px;
+        width: 1100px;
+        font-size: 20px;
+    }
+    .contenido{
+        position: relative;
+        right: 20%;
+    }
+    .experiencia{
+        width: 89%;
+        height: 87%;
+        margin: 20px  20px 120px 39px;
+    }
+    .experiencia p{
+        font-size: 20px;
+    }
+    .experiencia h1{
+        text-align: left;
+        font-size: 32px;
+    }
+    .experiencia img{
+        width: 60%;
+        position: relative;
+        left: 17%;
+    }
+    .entrevista{
+        width: 89%;
+        height: 310px;
+        padding: 20px;
+        margin: 20px  20px 10px 39px;
+    }
+    .video{
+        padding: 0px;
+         margin-left: 35px;
+    }
+ 
+    .contenido2{
+        position: relative;
+        align-items: center;
+        left: 120px;
+        width: 325px;
+        margin: -40px -20px -5px 10px;
+    }
+    .entrevista h1{
+        font-size: 32px;
+    }
+
+    .entrevista p{
+        font-size: 20px;
+    }
+    .video iframe{
+        width: 80%;
+        height: 240px;
     }
 
 }
